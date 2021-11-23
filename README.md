@@ -1,1 +1,3 @@
-# rts_game
+# RTS GAME
+
+Mi mayor proyecto <3.
