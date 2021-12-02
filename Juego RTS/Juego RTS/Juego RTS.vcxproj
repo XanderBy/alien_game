@@ -150,22 +150,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Audio.cpp" />
-    <ClCompile Include="Colision.cpp" />
-    <ClCompile Include="Constantes.cpp" />
-    <ClCompile Include="Defines.cpp" />
-    <ClCompile Include="Destruir.cpp" />
-    <ClCompile Include="Disparar.cpp" />
-    <ClCompile Include="Enemigo.cpp" />
-    <ClCompile Include="Estrella.cpp" />
-    <ClCompile Include="Funciones.cpp" />
-    <ClCompile Include="Nave.cpp" />
-    <ClCompile Include="Pantalla.cpp" />
-    <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="Teclado.cpp" />
     <ClCompile Include="game.cpp" />
-    <ClCompile Include="Inicializacion.cpp" />
-    <ClCompile Include="Texto.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
