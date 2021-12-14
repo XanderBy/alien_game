@@ -150,7 +150,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FuncionesGenerales.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="Globales.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
