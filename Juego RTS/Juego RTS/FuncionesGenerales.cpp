@@ -4,6 +4,7 @@
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_primitives.h>
 #include <allegro5/events.h>
+#include <allegro5/allegro_image.h>
 #include <exception>
 #include "Globales.cpp"
 #include <stdio.h>
@@ -44,6 +45,19 @@ static bool Inicializacion() {
 		al_register_event_source(queue, al_get_display_event_source(disp));
 		al_register_event_source(queue, al_get_timer_event_source(timer));
 
+		//
+		al_init_image_addon();
+		//Inicializamos la hoja de sprites
+		hoja.ruta = "spritesheet.png";
+		hoja.ancho = 64;
+		hoja.alto = 64;
+		hoja.cargar_sprite();
+
+		//Inicializamos al jugador
+		jugador.x = 100;
+		jugador.y = 100;
+		jugador.sprte = Sprite(hoja,11,6,0,0,11,6);
+
 
 	}
 	catch (const std::exception&)
@@ -60,8 +74,13 @@ static void EventosTeclado(ALLEGRO_EVENT* event)
 	switch (event -> type)
 	{
 	case ALLEGRO_EVENT_TIMER:
-		if (key[ALLEGRO_KEY_E]) {
+		if (key[ALLEGRO_KEY_A]) {
 			//printf("CLICK E");
+			jugador.x-=10;
+		}
+		if (key[ALLEGRO_KEY_D]) {
+			//printf("CLICK E");
+			jugador.x += 10;
 		}
 		pintar = true;
 		break;
@@ -122,17 +141,18 @@ static bool BuclePrincipal() {
 
 			//Definimos el array key
 			Eventos(&event);
-
-			
-
 			
 			
 			if(al_is_event_queue_empty(queue) && pintar )
 			{
 				
-				al_flip_display();
+				
 				al_clear_to_color(al_map_rgb(0, 0, 0));
 				pintar = false;
+
+				jugador.dibujar();
+
+				al_flip_display();
 			}
 
 
