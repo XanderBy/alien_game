@@ -1,20 +1,22 @@
-#include "Sprite.cpp"
+#include "Personaje.h"
 
-
-struct Personaje
+Personaje::Personaje()
 {
-	float x;
-	float y;
-	float velocidad;
-	Sprite sprte;
-	float tiempo_entre_disparo;
+	sprte = Sprite();
+	x = NULL;
+	y = NULL;
+	vx = NULL;
+	vy = NULL;
+	tiempo_entre_disparo = NULL;
+}
 
-	Personaje() {};
+Personaje::Personaje(Sprite sprte_param, float x_param, float y_param, float vx_param, float vy_param, float tiempo_entre_disparo_param)
+{
+	sprte = sprte_param;
+	x = x_param;
+	y = y_param;
+	vx = vx_param;
+	vy = vy_param;
+	tiempo_entre_disparo = tiempo_entre_disparo_param;
+}
 
-
-	void dibujar()
-	{
-		al_draw_bitmap_region(sprte.hoja.hja, sprte.x, sprte.y, sprte.ancho, sprte.alto, x, y, 0);
-	}
-
-};

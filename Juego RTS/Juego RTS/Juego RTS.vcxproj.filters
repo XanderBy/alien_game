@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de origen\Funciones">
+      <UniqueIdentifier>{e9ed7ae3-4fda-489a-a297-d444220a26a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -21,20 +24,48 @@
     <ClCompile Include="game.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="FuncionesGenerales.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="Globales.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Personaje.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="Entidad.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
     </ClCompile>
-    <ClCompile Include="Enemigo.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="FuncionesGenerales.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
     </ClCompile>
     <ClCompile Include="Sprite.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Funciones</Filter>
     </ClCompile>
+    <ClCompile Include="Personaje.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
+    </ClCompile>
+    <ClCompile Include="Hoja_sprite.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemigo.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entidad.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Personaje.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Hoja_sprite.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Juego RTS.rc">
+      <Filter>Archivos de recursos</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

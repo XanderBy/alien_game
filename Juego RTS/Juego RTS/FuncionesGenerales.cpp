@@ -74,14 +74,6 @@ static void EventosTeclado(ALLEGRO_EVENT* event)
 	switch (event -> type)
 	{
 	case ALLEGRO_EVENT_TIMER:
-		if (key[ALLEGRO_KEY_A]) {
-			//printf("CLICK E");
-			jugador.x-=10;
-		}
-		if (key[ALLEGRO_KEY_D]) {
-			//printf("CLICK E");
-			jugador.x += 10;
-		}
 		pintar = true;
 		break;
 	case ALLEGRO_EVENT_DISPLAY_CLOSE:
@@ -99,15 +91,43 @@ static void Eventos(ALLEGRO_EVENT* event)
 	switch (event -> type)
 	{
 	case ALLEGRO_EVENT_TIMER:
-
+		//key[ALLEGRO_KEY_MAX] = {0};
+		//printf("ACTUALIZA");
+		
 		break;
 	case ALLEGRO_EVENT_KEY_DOWN:
-		printf("Pulsó");
-		key[event -> keyboard.keycode] = key[event->keyboard.keycode] ? false : true;
+		//printf("Pulsó");
+		switch (event->keyboard.keycode) {
+		case ALLEGRO_KEY_W:
+			jugador.vy -= velocidad; // remove upward velocity
+			break;
+		case ALLEGRO_KEY_S:
+			jugador.vy += velocidad; // remove downward velocity
+			break;
+		case ALLEGRO_KEY_A:
+			jugador.vx -= velocidad; // remove leftward velocity
+			break;
+		case ALLEGRO_KEY_D:
+			jugador.vx += velocidad; // remove leftward velocity
+			break;
+		}
 		break;
 	case ALLEGRO_EVENT_KEY_UP:
-		printf("Soltó");
-		key[event -> keyboard.keycode] = false;
+		//printf("Soltó");
+		switch (event->keyboard.keycode) {
+		case ALLEGRO_KEY_W:
+			jugador.vy += velocidad; // remove upward velocity
+			break;
+		case ALLEGRO_KEY_S:
+			jugador.vy -= velocidad; // remove downward velocity
+			break;
+		case ALLEGRO_KEY_A:
+			jugador.vx += velocidad; // remove leftward velocity
+			break;
+		case ALLEGRO_KEY_D:
+			jugador.vx -= velocidad; // remove leftward velocity
+			break;
+		}
 		break;
 	}
 }
@@ -116,14 +136,9 @@ static bool BuclePrincipal() {
 	
 	try
 	{
-		//asignamos el espacio correspondiente para el array de teclas
-		//esto quiere decir que al array key le asignamos un valor de 0 en memoria pero con un posible tamaño del maximo
-		memset(key,0,sizeof(key));
 
 		//Se inicializa el timer
 		al_start_timer(timer);
-		for (int i = 0; i < ALLEGRO_KEY_MAX; i++)
-			key[i] &= 0;
 		while (true)
 		{
 			ALLEGRO_EVENT event;
@@ -146,10 +161,10 @@ static bool BuclePrincipal() {
 			if(al_is_event_queue_empty(queue) && pintar )
 			{
 				
-				
 				al_clear_to_color(al_map_rgb(0, 0, 0));
 				pintar = false;
-
+				jugador.x += jugador.vx;
+				jugador.y += jugador.vy;
 				jugador.dibujar();
 
 				al_flip_display();

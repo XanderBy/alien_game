@@ -151,14 +151,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Enemigo.cpp" />
+    <ClCompile Include="Entidad.cpp" />
     <ClCompile Include="FuncionesGenerales.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Globales.cpp" />
+    <ClCompile Include="Hoja_sprite.cpp" />
     <ClCompile Include="Personaje.cpp" />
     <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemigo.h" />
+    <ClInclude Include="Entidad.h" />
+    <ClInclude Include="Hoja_sprite.h" />
+    <ClInclude Include="Personaje.h" />
+    <ClInclude Include="Sprite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Juego RTS.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

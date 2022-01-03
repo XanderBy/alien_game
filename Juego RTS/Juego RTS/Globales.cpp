@@ -14,8 +14,6 @@ static ALLEGRO_DISPLAY* disp=NULL;
 static bool Cerrar_juego = false;
 static bool pintar = true;
 
-static bool key[ALLEGRO_KEY_MAX];
-
 //static int Numero_maximo_enemigos = 10;
 //static Enemigo Enemigos[10];
 static Hoja_sprite hoja;
@@ -24,3 +22,5 @@ static Personaje jugador;
 //Con esto controlo que "pulse" una vez por segundo
 static time_t inicioPulsaciones;
 static time_t finPulsaciones;
+
+static float velocidad = 0.1;
