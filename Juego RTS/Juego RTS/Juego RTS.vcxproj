@@ -156,7 +156,11 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Globales.cpp" />
     <ClCompile Include="Hoja_sprite.cpp" />
-    <ClCompile Include="Personaje.cpp" />
+    <ClCompile Include="Jugador.cpp" />
+    <ClCompile Include="Mapa.cpp" />
+    <ClCompile Include="Matriz.cpp" />
+    <ClCompile Include="Modulo.cpp" />
+    <ClCompile Include="Nave.cpp" />
     <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -166,7 +170,11 @@
     <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Entidad.h" />
     <ClInclude Include="Hoja_sprite.h" />
-    <ClInclude Include="Personaje.h" />
+    <ClInclude Include="Jugador.h" />
+    <ClInclude Include="Mapa.h" />
+    <ClInclude Include="Matriz.h" />
+    <ClInclude Include="Modulo.h" />
+    <ClInclude Include="Nave.h" />
     <ClInclude Include="Sprite.h" />
   </ItemGroup>
   <ItemGroup>

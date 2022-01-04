@@ -36,13 +36,25 @@
     <ClCompile Include="Sprite.cpp">
       <Filter>Archivos de origen\Funciones</Filter>
     </ClCompile>
-    <ClCompile Include="Personaje.cpp">
+    <ClCompile Include="Nave.cpp">
       <Filter>Archivos de origen\Funciones</Filter>
     </ClCompile>
     <ClCompile Include="Hoja_sprite.cpp">
       <Filter>Archivos de origen\Funciones</Filter>
     </ClCompile>
     <ClCompile Include="Enemigo.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
+    </ClCompile>
+    <ClCompile Include="Jugador.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapa.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
+    </ClCompile>
+    <ClCompile Include="Matriz.cpp">
+      <Filter>Archivos de origen\Funciones</Filter>
+    </ClCompile>
+    <ClCompile Include="Modulo.cpp">
       <Filter>Archivos de origen\Funciones</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,13 +65,25 @@
     <ClInclude Include="Sprite.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Personaje.h">
+    <ClInclude Include="Nave.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Enemigo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Hoja_sprite.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapa.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Jugador.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Modulo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Matriz.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
