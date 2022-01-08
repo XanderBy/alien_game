@@ -150,9 +150,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Array.cpp" />
     <ClCompile Include="Enemigo.cpp" />
     <ClCompile Include="Entidad.cpp" />
     <ClCompile Include="FuncionesGenerales.cpp" />
+    <ClCompile Include="FuncionesIniciales.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Globales.cpp" />
     <ClCompile Include="Hoja_sprite.cpp" />
@@ -161,12 +163,14 @@
     <ClCompile Include="Matriz.cpp" />
     <ClCompile Include="Modulo.cpp" />
     <ClCompile Include="Nave.cpp" />
+    <ClCompile Include="Recuadro.cpp" />
     <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array.h" />
     <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Entidad.h" />
     <ClInclude Include="Hoja_sprite.h" />
@@ -175,6 +179,7 @@
     <ClInclude Include="Matriz.h" />
     <ClInclude Include="Modulo.h" />
     <ClInclude Include="Nave.h" />
+    <ClInclude Include="Recuadro.h" />
     <ClInclude Include="Sprite.h" />
   </ItemGroup>
   <ItemGroup>

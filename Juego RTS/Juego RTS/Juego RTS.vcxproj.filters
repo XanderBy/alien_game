@@ -13,8 +13,35 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Archivos de origen\Funciones">
+    <Filter Include="Archivos de encabezado\Sprites">
+      <UniqueIdentifier>{f869a134-3560-4a8e-9167-5993b1c2334e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Mapa">
+      <UniqueIdentifier>{a0db0ce0-6fda-4743-a69a-7e37a61ba180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Nave">
+      <UniqueIdentifier>{59678838-cef3-43fc-bf1c-670e3b1a0e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Entidades">
+      <UniqueIdentifier>{d127f918-dc87-4fc3-b7a8-493d61a84638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\FuncionesBasicas">
+      <UniqueIdentifier>{768f8dac-0041-4820-b944-98c859beb2d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\FuncionesEntidades">
+      <UniqueIdentifier>{5ebe3e6e-740e-4bfa-8676-d3f9bd3457c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\FuncionesGenerales">
       <UniqueIdentifier>{e9ed7ae3-4fda-489a-a297-d444220a26a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\FuncionesNave">
+      <UniqueIdentifier>{007864e7-e6bb-4a44-9cf9-c101ee8f6258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\FuncionesSprites">
+      <UniqueIdentifier>{6fdfde8d-c53f-468b-a105-aadc634f10fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\FuncionesMapa">
+      <UniqueIdentifier>{90d6df55-e299-4364-be7a-38a98057af08}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,63 +54,78 @@
     <ClCompile Include="Globales.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Entidad.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
     <ClCompile Include="FuncionesGenerales.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
-    <ClCompile Include="Nave.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
-    <ClCompile Include="Hoja_sprite.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemigo.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
-    <ClCompile Include="Jugador.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
-    <ClCompile Include="Mapa.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
-    </ClCompile>
-    <ClCompile Include="Modulo.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
+      <Filter>Archivos de origen\FuncionesGenerales</Filter>
     </ClCompile>
     <ClCompile Include="Matriz.cpp">
-      <Filter>Archivos de origen\Funciones</Filter>
+      <Filter>Archivos de origen\FuncionesGenerales</Filter>
+    </ClCompile>
+    <ClCompile Include="Entidad.cpp">
+      <Filter>Archivos de origen\FuncionesEntidades</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemigo.cpp">
+      <Filter>Archivos de origen\FuncionesEntidades</Filter>
+    </ClCompile>
+    <ClCompile Include="Jugador.cpp">
+      <Filter>Archivos de origen\FuncionesEntidades</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Archivos de origen\FuncionesSprites</Filter>
+    </ClCompile>
+    <ClCompile Include="Hoja_sprite.cpp">
+      <Filter>Archivos de origen\FuncionesSprites</Filter>
+    </ClCompile>
+    <ClCompile Include="Modulo.cpp">
+      <Filter>Archivos de origen\FuncionesNave</Filter>
+    </ClCompile>
+    <ClCompile Include="Nave.cpp">
+      <Filter>Archivos de origen\FuncionesNave</Filter>
+    </ClCompile>
+    <ClCompile Include="Recuadro.cpp">
+      <Filter>Archivos de origen\FuncionesMapa</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapa.cpp">
+      <Filter>Archivos de origen\FuncionesMapa</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncionesIniciales.cpp">
+      <Filter>Archivos de origen\FuncionesGenerales</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.cpp">
+      <Filter>Archivos de origen\FuncionesGenerales</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Entidad.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="Hoja_sprite.h">
+      <Filter>Archivos de encabezado\Sprites</Filter>
     </ClInclude>
     <ClInclude Include="Sprite.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Nave.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemigo.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Hoja_sprite.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Sprites</Filter>
     </ClInclude>
     <ClInclude Include="Mapa.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Mapa</Filter>
     </ClInclude>
-    <ClInclude Include="Jugador.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="Nave.h">
+      <Filter>Archivos de encabezado\Nave</Filter>
     </ClInclude>
     <ClInclude Include="Modulo.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Nave</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigo.h">
+      <Filter>Archivos de encabezado\Entidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Entidad.h">
+      <Filter>Archivos de encabezado\Entidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Jugador.h">
+      <Filter>Archivos de encabezado\Entidades</Filter>
     </ClInclude>
     <ClInclude Include="Matriz.h">
+      <Filter>Archivos de encabezado\FuncionesBasicas</Filter>
+    </ClInclude>
+    <ClInclude Include="Recuadro.h">
+      <Filter>Archivos de encabezado\Mapa</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

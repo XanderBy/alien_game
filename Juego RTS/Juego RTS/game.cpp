@@ -6,7 +6,7 @@
 
 
 #include <stdio.h>
-#include "FuncionesGenerales.cpp"
+#include "FuncionesIniciales.cpp"
 
 int main() {
 
