@@ -1,8 +1,10 @@
-#pragma once
+
 #include "Recuadro.h"
-#include "Matriz.h"
-#include "Nave.h"
 #include "Array.h"
+#include "Nave.h"
+
+#ifndef Mapa_HEADER
+#define Mapa_HEADER
 
 class Mapa
 {
@@ -12,6 +14,8 @@ private:
 
 	int max_enemigos;
 	int max_aliados;
+	int ancho_mapa;
+	int alto_mapa;
 
 public:
 
@@ -26,6 +30,9 @@ public:
 	void dibujar_mapa();
 	void mover_entidad();
 	void inicializar_mapa();
+	int get_ancho_mapa();
+	int get_alto_mapa();
 
 };
 
+#endif

@@ -66,9 +66,6 @@
     <ClCompile Include="Enemigo.cpp">
       <Filter>Archivos de origen\FuncionesEntidades</Filter>
     </ClCompile>
-    <ClCompile Include="Jugador.cpp">
-      <Filter>Archivos de origen\FuncionesEntidades</Filter>
-    </ClCompile>
     <ClCompile Include="Sprite.cpp">
       <Filter>Archivos de origen\FuncionesSprites</Filter>
     </ClCompile>
@@ -116,21 +113,21 @@
     <ClInclude Include="Entidad.h">
       <Filter>Archivos de encabezado\Entidades</Filter>
     </ClInclude>
-    <ClInclude Include="Jugador.h">
-      <Filter>Archivos de encabezado\Entidades</Filter>
-    </ClInclude>
     <ClInclude Include="Matriz.h">
       <Filter>Archivos de encabezado\FuncionesBasicas</Filter>
     </ClInclude>
     <ClInclude Include="Recuadro.h">
       <Filter>Archivos de encabezado\Mapa</Filter>
     </ClInclude>
-    <ClInclude Include="Array.h">
+    <ClInclude Include="Resource.h">
       <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Archivos de encabezado\FuncionesBasicas</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Juego RTS.rc">
+    <ResourceCompile Include="..\..\..\..\..\Users\aleja\OneDrive\Escritorio\Juego RTS.rc">
       <Filter>Archivos de recursos</Filter>
     </ResourceCompile>
   </ItemGroup>

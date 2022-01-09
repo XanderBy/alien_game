@@ -1,11 +1,8 @@
 #include "Hoja_sprite.h"
 
+
 Hoja_sprite::Hoja_sprite()
 {
-	ruta = NULL;
-	hja = NULL;
-	ancho = NULL;
-	alto = NULL;
 }
 
 Hoja_sprite::Hoja_sprite(char* ruta_param, ALLEGRO_BITMAP* hja_param, float ancho_param, float alto_param)

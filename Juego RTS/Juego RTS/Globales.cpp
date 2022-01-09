@@ -1,6 +1,6 @@
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_font.h>
-#include "Enemigo.cpp"
+#include "Mapa.h"
 //#include "Personaje.cpp"
 
 static int Ancho_pantalla = 960;
@@ -25,7 +25,4 @@ static time_t finPulsaciones;
 
 static float velocidad = 0.1;
 
-
-//valores estaticos para los modulos de las naves
-static int ancho_nave = 5;
-static int alto_nave = 10;
+static Mapa mapa;

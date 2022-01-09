@@ -1,21 +1,39 @@
 #include "Matriz.h"
 
 
-template<typename T>
-inline Matriz<T>::Matriz(int ancho, int alto)
+
+template<class T>
+Matriz<T>::Matriz()
 {
-	dato[ancho][alto] = {};
+}
+
+template<class T>
+Matriz<T>::Matriz(int ancho, int alto)
+{
+	this->dato[ancho][alto] = { {} };
 	
 }
 
-template<typename T>
+template<class T>
 void Matriz<T>::set_valor(int x, int y, T valor)
 {
-	dato[x][y] = valor;
+	this->dato[x][y] = valor;
 }
 
-template<typename T>
+template<class T>
 T Matriz<T>::get_valor(int x, int y)
 {
-	return dato[x][y];
+	return this->dato[x][y];
+}
+
+template<class T>
+int Matriz<T>::get_ancho()
+{
+	return this->ancho;
+}
+
+template<class T>
+int Matriz<T>::get_alto()
+{
+	return this->alto;
 }

@@ -1,9 +1,8 @@
-#include <allegro5/allegro5.h>
-#include "Sprite.cpp"
-#include "Entidad.h"
-#pragma once
 
- class Enemigo : public Entidad
+#ifndef Enemigo_HEADER
+#define Enemigo_HEADER
+
+ class Enemigo
 {
 private:
 
@@ -12,3 +11,5 @@ public:
 	
 
 };
+
+#endif

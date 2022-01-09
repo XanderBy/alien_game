@@ -8,6 +8,7 @@
 #include <exception>
 #include "Globales.cpp"
 #include <stdio.h>
+#include "Array.h"
 
 #define KEY_SEEN     1
 #define KEY_RELEASED 2
@@ -36,6 +37,9 @@ static bool Inicializacion() {
 		//Instalamos el modulo de fuente
 		al_init_font_addon();
 
+		//Iniciamos para dibujos basicos
+		al_init_primitives_addon();
+
 		//Instalamos el modulo de audio
 		al_install_audio();
 
@@ -47,17 +51,12 @@ static bool Inicializacion() {
 
 		//
 		al_init_image_addon();
-		//Inicializamos la hoja de sprites
-		hoja.ruta = "spritesheet.png";
-		hoja.ancho = 64;
-		hoja.alto = 64;
-		hoja.cargar_sprite();
 
-		//Inicializamos al jugador
-		jugador.x = 100;
-		jugador.y = 100;
-		jugador.sprte = Sprite(hoja, 11, 6, 0, 0, 11, 6);
-
+		//Inicializamos el mapa
+		Array<Nave> enemigos=Array<Nave>(10);
+		Array<Nave> aliados = Array<Nave>(10);
+		Matriz<Recuadro> cuadricula = Matriz<Recuadro>(10, 10);
+		mapa = Mapa(cuadricula,enemigos, aliados);
 
 	}
 	catch (const std::exception&)
@@ -97,7 +96,7 @@ static void Eventos(ALLEGRO_EVENT* event)
 		break;
 	case ALLEGRO_EVENT_KEY_DOWN:
 		//printf("Pulsó");
-		switch (event->keyboard.keycode) {
+		/*switch (event->keyboard.keycode) {
 		case ALLEGRO_KEY_W:
 			jugador.vy -= velocidad; // remove upward velocity
 			break;
@@ -110,11 +109,11 @@ static void Eventos(ALLEGRO_EVENT* event)
 		case ALLEGRO_KEY_D:
 			jugador.vx += velocidad; // remove leftward velocity
 			break;
-		}
+		}*/
 		break;
 	case ALLEGRO_EVENT_KEY_UP:
 		//printf("Soltó");
-		switch (event->keyboard.keycode) {
+		/*switch (event->keyboard.keycode) {
 		case ALLEGRO_KEY_W:
 			jugador.vy += velocidad; // remove upward velocity
 			break;
@@ -127,7 +126,7 @@ static void Eventos(ALLEGRO_EVENT* event)
 		case ALLEGRO_KEY_D:
 			jugador.vx -= velocidad; // remove leftward velocity
 			break;
-		}
+		}*/
 		break;
 	}
 }
@@ -163,9 +162,8 @@ static bool BuclePrincipal() {
 
 				al_clear_to_color(al_map_rgb(0, 0, 0));
 				pintar = false;
-				jugador.x += jugador.vx;
-				jugador.y += jugador.vy;
-				jugador.dibujar();
+				
+				mapa.dibujar_mapa();
 
 				al_flip_display();
 			}

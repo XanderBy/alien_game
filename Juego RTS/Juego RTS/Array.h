@@ -1,10 +1,13 @@
-#pragma once
 
-template <typename T>
+
+#ifndef Array_HEADER
+#define Array_HEADER
+
+template <class T>
 class Array
 {
 private:
-	T dato*;
+	T* dato;
 	int longitud;
 
 public:
@@ -18,4 +21,4 @@ public:
 
 };
 
-
+#endif

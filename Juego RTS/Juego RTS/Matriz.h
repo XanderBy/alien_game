@@ -1,12 +1,14 @@
-#pragma once
 
+#ifndef Matriz_HEADER
+#define Matriz_HEADER
 
-template<typename T>
+template<class T>
 class Matriz
 {
 private:
-	T dato**;
-	int ancho,alto;
+	T** dato;
+	int ancho;
+	int alto;
 
 public:
 
@@ -15,5 +17,7 @@ public:
 
 	void set_valor(int x, int y, T valor);
 	T get_valor(int x, int y);
+	int get_ancho();
+	int get_alto();
 };
-
+#endif
