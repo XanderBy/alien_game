@@ -1,9 +1,9 @@
 
+#ifndef Sprite_H
+#define Sprite_H
+
 #include <string>
 #include "Hoja_sprite.h"
-
-#ifndef Sprite_HEADER
-#define Sprite_HEADER
 
 class Sprite
 {

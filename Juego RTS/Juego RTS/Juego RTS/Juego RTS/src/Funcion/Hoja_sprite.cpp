@@ -1,4 +1,5 @@
-#include "Hoja_sprite.h"
+#include "../Modelo/Hoja_sprite.h"
+#include "allegro5/bitmap.h"
 
 
 Hoja_sprite::Hoja_sprite()

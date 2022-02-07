@@ -46,89 +46,100 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="tools\audio\audio_explode1.flac" />
+    <None Include="tools\audio\audio_explode2.flac" />
+    <None Include="tools\audio\audio_shot.flac" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="game.cpp">
+    <ClCompile Include="src\game.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Globales.cpp">
+    <ClCompile Include="src\Globales.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="FuncionesGenerales.cpp">
+    <ClCompile Include="src\Funcion\FuncionesGenerales.cpp">
       <Filter>Archivos de origen\FuncionesGenerales</Filter>
     </ClCompile>
-    <ClCompile Include="Matriz.cpp">
+    <ClCompile Include="src\Funcion\Matriz.cpp">
       <Filter>Archivos de origen\FuncionesGenerales</Filter>
     </ClCompile>
-    <ClCompile Include="Entidad.cpp">
+    <ClCompile Include="src\Funcion\Entidad.cpp">
       <Filter>Archivos de origen\FuncionesEntidades</Filter>
     </ClCompile>
-    <ClCompile Include="Enemigo.cpp">
+    <ClCompile Include="src\Funcion\Enemigo.cpp">
       <Filter>Archivos de origen\FuncionesEntidades</Filter>
     </ClCompile>
-    <ClCompile Include="Sprite.cpp">
+    <ClCompile Include="src\Funcion\Sprite.cpp">
       <Filter>Archivos de origen\FuncionesSprites</Filter>
     </ClCompile>
-    <ClCompile Include="Hoja_sprite.cpp">
+    <ClCompile Include="src\Funcion\Hoja_sprite.cpp">
       <Filter>Archivos de origen\FuncionesSprites</Filter>
     </ClCompile>
-    <ClCompile Include="Modulo.cpp">
+    <ClCompile Include="src\Funcion\Modulo.cpp">
       <Filter>Archivos de origen\FuncionesNave</Filter>
     </ClCompile>
-    <ClCompile Include="Nave.cpp">
+    <ClCompile Include="src\Funcion\Nave.cpp">
       <Filter>Archivos de origen\FuncionesNave</Filter>
     </ClCompile>
-    <ClCompile Include="Recuadro.cpp">
+    <ClCompile Include="src\Funcion\Recuadro.cpp">
       <Filter>Archivos de origen\FuncionesMapa</Filter>
     </ClCompile>
-    <ClCompile Include="Mapa.cpp">
+    <ClCompile Include="src\Funcion\Mapa.cpp">
       <Filter>Archivos de origen\FuncionesMapa</Filter>
     </ClCompile>
-    <ClCompile Include="FuncionesIniciales.cpp">
+    <ClCompile Include="src\Funcion\FuncionesIniciales.cpp">
       <Filter>Archivos de origen\FuncionesGenerales</Filter>
     </ClCompile>
-    <ClCompile Include="Array.cpp">
+    <ClCompile Include="src\Funcion\Array.cpp">
       <Filter>Archivos de origen\FuncionesGenerales</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hoja_sprite.h">
+    <ClInclude Include="src\Modelo\Hoja_sprite.h">
       <Filter>Archivos de encabezado\Sprites</Filter>
     </ClInclude>
-    <ClInclude Include="Sprite.h">
+    <ClInclude Include="src\Modelo\Sprite.h">
       <Filter>Archivos de encabezado\Sprites</Filter>
     </ClInclude>
-    <ClInclude Include="Mapa.h">
+    <ClInclude Include="src\Modelo\Mapa.h">
       <Filter>Archivos de encabezado\Mapa</Filter>
     </ClInclude>
-    <ClInclude Include="Nave.h">
+    <ClInclude Include="src\Modelo\Nave.h">
       <Filter>Archivos de encabezado\Nave</Filter>
     </ClInclude>
-    <ClInclude Include="Modulo.h">
+    <ClInclude Include="src\Modelo\Modulo.h">
       <Filter>Archivos de encabezado\Nave</Filter>
     </ClInclude>
-    <ClInclude Include="Enemigo.h">
+    <ClInclude Include="src\Modelo\Enemigo.h">
       <Filter>Archivos de encabezado\Entidades</Filter>
     </ClInclude>
-    <ClInclude Include="Entidad.h">
+    <ClInclude Include="src\Modelo\Entidad.h">
       <Filter>Archivos de encabezado\Entidades</Filter>
     </ClInclude>
-    <ClInclude Include="Matriz.h">
+    <ClInclude Include="src\Modelo\Matriz.h">
       <Filter>Archivos de encabezado\FuncionesBasicas</Filter>
     </ClInclude>
-    <ClInclude Include="Recuadro.h">
+    <ClInclude Include="src\Modelo\Recuadro.h">
       <Filter>Archivos de encabezado\Mapa</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
+    <ClInclude Include="src\Modelo\Array.h">
+      <Filter>Archivos de encabezado\FuncionesBasicas</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Array.h">
-      <Filter>Archivos de encabezado\FuncionesBasicas</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\..\..\..\..\Users\aleja\OneDrive\Escritorio\Juego RTS.rc">
+    <ResourceCompile Include="Juego RTS.rc">
       <Filter>Archivos de recursos</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="tools\img\spritesheet.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="tools\img\spritesheet111.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
   </ItemGroup>
 </Project>

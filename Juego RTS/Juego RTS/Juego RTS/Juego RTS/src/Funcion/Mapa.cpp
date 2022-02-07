@@ -1,4 +1,9 @@
-#include "Mapa.h"
+#include "../Modelo/Mapa.h"
+#include "../Modelo/Matriz.h"
+#include "../Modelo/Nave.h"
+#include "../Modelo/Recuadro.h"
+#include "../Modelo/Array.h"
+#include "../Globales.cpp"
 
 Mapa::Mapa()
 {
@@ -8,22 +13,26 @@ Mapa::Mapa()
 	this->alto_mapa=0;
 }
 
-Mapa::Mapa(Matriz<Recuadro> cuadricula, Array<Nave> enemigos, Array<Nave> aliados)
+Mapa::Mapa(Recuadro** cuadricula, Nave* enemigos, Nave* aliados)
 {
 	this->cuadricula = cuadricula;
 	this->enemigos = enemigos;
 	this->aliados = aliados;
+	this->alto_mapa = ancho_mapa_gb;
+	this->ancho_mapa = alto_mapa_gb;
 
 	inicializar_mapa();
 }
 
 void Mapa::dibujar_mapa()
 {
-	for (size_t x = 0; x < cuadricula.get_alto(); x++)
+	//int filas = sizeof(cuadricula) / sizeof(cuadricula[0]);
+	//int columnas = sizeof(cuadricula[0]) / sizeof(cuadricula[0][0]);
+	for (size_t x = 0; x < alto_mapa; x++)
 	{
-		for (size_t y = 0; y < cuadricula.get_ancho(); y++)
+		for (size_t y = 0; y < ancho_mapa; y++)
 		{
-			cuadricula.get_valor(x, y).dibujar();
+			cuadricula[x][y].dibujar();
 		}
 	}
 	
@@ -43,7 +52,7 @@ void Mapa::inicializar_mapa()
 		for (size_t y = 0; y < this->ancho_mapa; y++)
 		{
 			Recuadro recuadro = Recuadro(x,y,50,50, Tipo_recuadro::libre);
-			this->cuadricula.set_valor(x,y, recuadro);
+			this->cuadricula[x][y]= recuadro;
 		}
 	}
 

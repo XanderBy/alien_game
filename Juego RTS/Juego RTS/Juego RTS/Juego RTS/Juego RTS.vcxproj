@@ -150,39 +150,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Array.cpp" />
-    <ClCompile Include="Enemigo.cpp" />
-    <ClCompile Include="Entidad.cpp" />
-    <ClCompile Include="FuncionesGenerales.cpp" />
-    <ClCompile Include="FuncionesIniciales.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="Globales.cpp" />
-    <ClCompile Include="Hoja_sprite.cpp" />
-    <ClCompile Include="Mapa.cpp" />
-    <ClCompile Include="Matriz.cpp" />
-    <ClCompile Include="Modulo.cpp" />
-    <ClCompile Include="Nave.cpp" />
-    <ClCompile Include="Recuadro.cpp" />
-    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="src\Funcion\Array.cpp" />
+    <ClCompile Include="src\Funcion\Enemigo.cpp" />
+    <ClCompile Include="src\Funcion\Entidad.cpp" />
+    <ClCompile Include="src\Funcion\FuncionesGenerales.cpp" />
+    <ClCompile Include="src\Funcion\FuncionesIniciales.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\Globales.cpp" />
+    <ClCompile Include="src\Funcion\Hoja_sprite.cpp" />
+    <ClCompile Include="src\Funcion\Mapa.cpp" />
+    <ClCompile Include="src\Funcion\Matriz.cpp" />
+    <ClCompile Include="src\Funcion\Modulo.cpp" />
+    <ClCompile Include="src\Funcion\Nave.cpp" />
+    <ClCompile Include="src\Funcion\Recuadro.cpp" />
+    <ClCompile Include="src\Funcion\Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="tools\audio\audio_explode1.flac" />
+    <None Include="tools\audio\audio_explode2.flac" />
+    <None Include="tools\audio\audio_shot.flac" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Array.h" />
-    <ClInclude Include="Enemigo.h" />
-    <ClInclude Include="Entidad.h" />
-    <ClInclude Include="Hoja_sprite.h" />
-    <ClInclude Include="Mapa.h" />
-    <ClInclude Include="Matriz.h" />
-    <ClInclude Include="Modulo.h" />
-    <ClInclude Include="Nave.h" />
-    <ClInclude Include="Recuadro.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Modelo\Array.h" />
+    <ClInclude Include="src\Modelo\Enemigo.h" />
+    <ClInclude Include="src\Modelo\Entidad.h" />
+    <ClInclude Include="src\Modelo\Hoja_sprite.h" />
+    <ClInclude Include="src\Modelo\Mapa.h" />
+    <ClInclude Include="src\Modelo\Matriz.h" />
+    <ClInclude Include="src\Modelo\Modulo.h" />
+    <ClInclude Include="src\Modelo\Nave.h" />
+    <ClInclude Include="src\Modelo\Recuadro.h" />
+    <ClInclude Include="src\Modelo\Sprite.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Juego RTS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="tools\img\spritesheet.png" />
+    <Image Include="tools\img\spritesheet111.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

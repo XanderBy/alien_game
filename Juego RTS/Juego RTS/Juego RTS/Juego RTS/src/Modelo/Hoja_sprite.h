@@ -1,10 +1,11 @@
 
+#ifndef Hoja_sprite_H
+#define Hoja_sprite_H
+
 #include <allegro5/bitmap.h>
 #include <allegro5/allegro5.h>
 
 
-#ifndef Hoja_sprite_HEADER
-#define Hoja_sprite_HEADER
 class Hoja_sprite
 {
 private:

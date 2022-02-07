@@ -1,9 +1,15 @@
-#include "Entidad.h"
-
+#include "../Modelo/Entidad.h"
+#include "../Modelo/Sprite.h"
 
 
 Entidad::Entidad()
 {
+	this->sprte = Sprite();
+	this->vida = 10;
+	this->x = 0;
+	this->y = 0;
+	this->vx = 0;
+	this->vy = 0;
 }
 
 Entidad::Entidad(Sprite sprte, int vida, float x, float y, float vx, float vy)

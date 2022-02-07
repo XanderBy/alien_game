@@ -1,6 +1,6 @@
 
-#ifndef Matriz_HEADER
-#define Matriz_HEADER
+#ifndef Matriz_H
+#define Matriz_H
 
 template<class T>
 class Matriz

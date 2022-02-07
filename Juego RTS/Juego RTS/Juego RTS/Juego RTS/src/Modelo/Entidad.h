@@ -1,8 +1,8 @@
 
 #include "Sprite.h"
 
-#ifndef Entidad_HEADER
-#define Entidad_HEADER
+#ifndef Entidad_H
+#define Entidad_H
 
 class Entidad
 {

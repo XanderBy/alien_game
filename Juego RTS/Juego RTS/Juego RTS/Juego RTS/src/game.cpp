@@ -6,11 +6,12 @@
 
 
 #include <stdio.h>
-#include "FuncionesIniciales.cpp"
+#include "./Funcion/FuncionesIniciales.cpp"
 
 int main() {
 
 	//Primero instalamos/inicializamos los componentes necesarios
+	
 	if (Inicializacion()) {
 		printf("Inicializado todo correctamente");
 
@@ -24,5 +25,6 @@ int main() {
 	else {
 		printf("Fallo a la hora de inicializar");
 	}
+	
 	return 1;
 }

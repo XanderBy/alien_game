@@ -1,6 +1,6 @@
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_font.h>
-#include "Mapa.h"
+#include "./Modelo/Mapa.h"
 //#include "Personaje.cpp"
 
 static int Ancho_pantalla = 960;
@@ -24,5 +24,8 @@ static time_t inicioPulsaciones;
 static time_t finPulsaciones;
 
 static float velocidad = 0.1;
+
+static int ancho_mapa_gb = 10;
+static int alto_mapa_gb = 10;
 
 static Mapa mapa;

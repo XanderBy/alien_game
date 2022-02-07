@@ -1,5 +1,6 @@
-#include "Recuadro.h"
+#include "../Modelo/Recuadro.h"
 #include <allegro5/allegro_primitives.h>
+
 
 Recuadro::Recuadro()
 {

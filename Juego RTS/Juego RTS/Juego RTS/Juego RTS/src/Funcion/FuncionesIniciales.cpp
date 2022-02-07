@@ -6,9 +6,9 @@
 #include <allegro5/events.h>
 #include <allegro5/allegro_image.h>
 #include <exception>
-#include "Globales.cpp"
+#include "../Globales.cpp"
 #include <stdio.h>
-#include "Array.h"
+#include "../Modelo/Array.h"
 
 #define KEY_SEEN     1
 #define KEY_RELEASED 2
@@ -53,9 +53,10 @@ static bool Inicializacion() {
 		al_init_image_addon();
 
 		//Inicializamos el mapa
-		Array<Nave> enemigos=Array<Nave>(10);
-		Array<Nave> aliados = Array<Nave>(10);
-		Matriz<Recuadro> cuadricula = Matriz<Recuadro>(10, 10);
+		Nave* enemigos = new Nave[10];
+		Nave* aliados = new Nave[10];
+		Recuadro** cuadricula = new Recuadro*[10];
+		for (int i = 0; i < 10; i++) cuadricula[i] = new Recuadro[10];
 		mapa = Mapa(cuadricula,enemigos, aliados);
 
 	}
@@ -95,7 +96,7 @@ static void Eventos(ALLEGRO_EVENT* event)
 
 		break;
 	case ALLEGRO_EVENT_KEY_DOWN:
-		//printf("Pulsó");
+		printf("Pulsó");
 		/*switch (event->keyboard.keycode) {
 		case ALLEGRO_KEY_W:
 			jugador.vy -= velocidad; // remove upward velocity

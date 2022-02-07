@@ -1,7 +1,7 @@
 
 
-#ifndef Array_HEADER
-#define Array_HEADER
+#ifndef Array_H
+#define Array_H
 
 template <class T>
 class Array

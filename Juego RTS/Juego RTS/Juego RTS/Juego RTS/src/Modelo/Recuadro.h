@@ -1,8 +1,9 @@
 
-#include "Sprite.h"
 
-#ifndef Recuadro_HEADER
-#define Recuadro_HEADER
+#ifndef Recuadro_H
+#define Recuadro_H
+
+#include "Sprite.h"
 
 enum Tipo_recuadro {Bloqueado, libre};
 

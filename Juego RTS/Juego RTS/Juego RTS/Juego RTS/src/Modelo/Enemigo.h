@@ -1,6 +1,6 @@
 
-#ifndef Enemigo_HEADER
-#define Enemigo_HEADER
+#ifndef Enemigo_H
+#define Enemigo_H
 
  class Enemigo
 {

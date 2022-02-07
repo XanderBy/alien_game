@@ -1,10 +1,11 @@
 
+
+#ifndef Mapa_H
+#define Mapa_H
+
 #include "Recuadro.h"
-#include "Array.h"
 #include "Nave.h"
 
-#ifndef Mapa_HEADER
-#define Mapa_HEADER
 
 class Mapa
 {
@@ -19,12 +20,12 @@ private:
 
 public:
 
-	Matriz<Recuadro> cuadricula;
-	Array<Nave> enemigos;
-	Array<Nave> aliados;
+	Recuadro** cuadricula;
+	Nave* enemigos;
+	Nave* aliados;
 
 	Mapa();
-	Mapa(Matriz<Recuadro> cuadricula, Array<Nave> enemigos, Array<Nave> aliados);
+	Mapa(Recuadro** cuadricula, Nave* enemigos, Nave* aliados);
 
 
 	void dibujar_mapa();
