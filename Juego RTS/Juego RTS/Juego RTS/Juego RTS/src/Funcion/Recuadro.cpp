@@ -44,9 +44,11 @@ Tipo_recuadro Recuadro::get_tipo_recuadro()
 
 void Recuadro::dibujar()
 {
-    int x_inicio = x==0 ? 0: ((x * ancho) - ancho) ;
+    int x_inicio = x==0 ? 0: ((x * ancho) - ancho);
     int y_inicio = y==0 ? 0 : ((y * alto) - alto);
-    al_draw_rectangle(x_inicio, y_inicio, x * ancho, x * alto, al_map_rgb(44, 117, 255),1.0);
+    int x_fin = (x + 1) * ancho;
+    int y_fin = (y + 1) * alto;
+    al_draw_rectangle(x_inicio, y_inicio, x_fin, y_fin, al_map_rgb(44, 117, 255),1.0);
         //al_draw_bitmap_region(sprt.hoja.hja, sprt.x, sprt.y, sprt.ancho, sprt.alto, x*ancho, y*alto, 0);
 
 }

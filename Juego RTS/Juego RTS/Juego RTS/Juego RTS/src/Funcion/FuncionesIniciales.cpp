@@ -53,10 +53,10 @@ static bool Inicializacion() {
 		al_init_image_addon();
 
 		//Inicializamos el mapa
-		Nave* enemigos = new Nave[10];
-		Nave* aliados = new Nave[10];
-		Recuadro** cuadricula = new Recuadro*[10];
-		for (int i = 0; i < 10; i++) cuadricula[i] = new Recuadro[10];
+		Nave* enemigos = new Nave[max_naves_enemigos_gb];
+		Nave* aliados = new Nave[max_naves_jugador_gb];
+		Recuadro** cuadricula = new Recuadro*[ancho_mapa_gb];
+		for (int i = 0; i < ancho_mapa_gb; i++) cuadricula[i] = new Recuadro[alto_mapa_gb];
 		mapa = Mapa(cuadricula,enemigos, aliados);
 
 	}

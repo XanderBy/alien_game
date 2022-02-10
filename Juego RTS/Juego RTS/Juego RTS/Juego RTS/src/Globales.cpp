@@ -25,7 +25,10 @@ static time_t finPulsaciones;
 
 static float velocidad = 0.1;
 
-static int ancho_mapa_gb = 10;
+static int ancho_mapa_gb = 20;
 static int alto_mapa_gb = 10;
+
+static int max_naves_jugador_gb = 10;
+static int max_naves_enemigos_gb = 10;
 
 static Mapa mapa;
