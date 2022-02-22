@@ -1,3 +1,4 @@
+#include "Nave.h"
 
 
 #ifndef Jugador_H
@@ -7,13 +8,12 @@ class Jugador
 {
 private:
 
+	Nave* listado_naves;
+
 public:
 
-	Jugador();
+	Jugador(int max_aliados);
 	~Jugador();
-
-	void mover_x(bool positivo);
-	void mover_y(bool positivo);
 
 };
 

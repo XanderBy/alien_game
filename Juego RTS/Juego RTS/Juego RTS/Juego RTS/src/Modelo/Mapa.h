@@ -19,20 +19,23 @@ private:
 	int alto_mapa;
 
 public:
-
+	//int posicion_mapa_x;
+	//int posicion_mapa_y;
+	int posicion_x;
+	int posicion_y;
 	Recuadro** cuadricula;
-	Nave* enemigos;
-	Nave* aliados;
 
 	Mapa();
-	Mapa(Recuadro** cuadricula, Nave* enemigos, Nave* aliados);
+	Mapa(Recuadro** cuadricula, int max_aliados, int max_enemigos, int ancho_mapa, int alto_mapa);
 
 
 	void dibujar_mapa();
-	void mover_entidad();
 	void inicializar_mapa();
+	void actualizar_posicion();
 	int get_ancho_mapa();
 	int get_alto_mapa();
+	int get_max_enemigos();
+	int get_max_aliados();
 
 };
 

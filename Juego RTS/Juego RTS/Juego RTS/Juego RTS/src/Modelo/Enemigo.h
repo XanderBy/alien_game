@@ -1,3 +1,4 @@
+#include "Nave.h"
 
 #ifndef Enemigo_H
 #define Enemigo_H
@@ -6,9 +7,12 @@
 {
 private:
 
+	Nave* listado_naves;
 
 public:
 	
+	Enemigo();
+	~Enemigo();
 
 };
 

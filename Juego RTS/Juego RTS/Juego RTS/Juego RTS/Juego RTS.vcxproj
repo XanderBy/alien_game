@@ -154,8 +154,10 @@
     <ClCompile Include="src\Funcion\Enemigo.cpp" />
     <ClCompile Include="src\Funcion\Entidad.cpp" />
     <ClCompile Include="src\Funcion\FuncionesGenerales.cpp" />
-    <ClCompile Include="src\Funcion\FuncionesIniciales.cpp" />
-    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\Funcion\Game.cpp" />
+    <ClCompile Include="src\Funcion\Jugador.cpp" />
+    <ClCompile Include="src\Funcion\Partida.cpp" />
+    <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Globales.cpp" />
     <ClCompile Include="src\Funcion\Hoja_sprite.cpp" />
     <ClCompile Include="src\Funcion\Mapa.cpp" />
@@ -166,7 +168,9 @@
     <ClCompile Include="src\Funcion\Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Juego RTS.aps" />
     <None Include="packages.config" />
+    <None Include="Resource.aps" />
     <None Include="tools\audio\audio_explode1.flac" />
     <None Include="tools\audio\audio_explode2.flac" />
     <None Include="tools\audio\audio_shot.flac" />
@@ -176,11 +180,14 @@
     <ClInclude Include="src\Modelo\Array.h" />
     <ClInclude Include="src\Modelo\Enemigo.h" />
     <ClInclude Include="src\Modelo\Entidad.h" />
+    <ClInclude Include="src\Modelo\Game.h" />
     <ClInclude Include="src\Modelo\Hoja_sprite.h" />
+    <ClInclude Include="src\Modelo\Jugador.h" />
     <ClInclude Include="src\Modelo\Mapa.h" />
     <ClInclude Include="src\Modelo\Matriz.h" />
     <ClInclude Include="src\Modelo\Modulo.h" />
     <ClInclude Include="src\Modelo\Nave.h" />
+    <ClInclude Include="src\Modelo\Partida.h" />
     <ClInclude Include="src\Modelo\Recuadro.h" />
     <ClInclude Include="src\Modelo\Sprite.h" />
   </ItemGroup>

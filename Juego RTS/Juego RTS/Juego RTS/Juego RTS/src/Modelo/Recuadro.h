@@ -11,8 +11,7 @@ class Recuadro
 {
 private:
 
-	int x;
-	int y;
+	
 	int ancho;
 	int alto;
 	Sprite sprt;
@@ -21,6 +20,8 @@ private:
 
 public:
 
+	int x;
+	int y;
 	unsigned ocupado_con;
 	
 	Recuadro();

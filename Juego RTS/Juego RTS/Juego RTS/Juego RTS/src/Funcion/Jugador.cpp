@@ -1,20 +1,14 @@
 
 #include "../Modelo/Jugador.h"
+#include "../Globales.cpp"
+#include <iostream>
 
-Jugador::Jugador()
+Jugador::Jugador(int max_aliados)
 {
-
+	this->listado_naves = new Nave[max_aliados];
 }
 
 Jugador::~Jugador()
 {
 
-}
-
-void Jugador::mover_x(bool positivo)
-{
-}
-
-void Jugador::mover_y(bool positivo)
-{
 }
