@@ -101,6 +101,12 @@
     <ClCompile Include="src\Funcion\Game.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="src\Funcion\Eventos.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Funcion\Manejador_estados.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Modelo\Hoja_sprite.h">
@@ -143,6 +149,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="src\Modelo\Game.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Modelo\Manejador_estados.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

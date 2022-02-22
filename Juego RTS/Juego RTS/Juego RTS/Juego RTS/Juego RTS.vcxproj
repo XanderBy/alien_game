@@ -153,9 +153,11 @@
     <ClCompile Include="src\Funcion\Array.cpp" />
     <ClCompile Include="src\Funcion\Enemigo.cpp" />
     <ClCompile Include="src\Funcion\Entidad.cpp" />
+    <ClCompile Include="src\Funcion\Eventos.cpp" />
     <ClCompile Include="src\Funcion\FuncionesGenerales.cpp" />
     <ClCompile Include="src\Funcion\Game.cpp" />
     <ClCompile Include="src\Funcion\Jugador.cpp" />
+    <ClCompile Include="src\Funcion\Manejador_estados.cpp" />
     <ClCompile Include="src\Funcion\Partida.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Globales.cpp" />
@@ -183,6 +185,7 @@
     <ClInclude Include="src\Modelo\Game.h" />
     <ClInclude Include="src\Modelo\Hoja_sprite.h" />
     <ClInclude Include="src\Modelo\Jugador.h" />
+    <ClInclude Include="src\Modelo\Manejador_estados.h" />
     <ClInclude Include="src\Modelo\Mapa.h" />
     <ClInclude Include="src\Modelo\Matriz.h" />
     <ClInclude Include="src\Modelo\Modulo.h" />
