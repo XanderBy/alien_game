@@ -1,10 +1,5 @@
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_font.h>
-#include "./Modelo/Mapa.h"
-#include "Modelo/Jugador.h"
-#include "Modelo/Enemigo.h"
-#include "Modelo/Partida.h"
-#include "Modelo/Game.h"
 //#include "Personaje.cpp"
 
 
@@ -18,14 +13,14 @@ static bool Cerrar_juego = false;
 static bool pintar = true;
 
 //static int Numero_maximo_enemigos = 10;
-//static Enemigo Enemigos[10];
-static Hoja_sprite hoja;
+//static Enemigo Enemigos[10]
 //static Personaje jugador;
 
 //Con esto controlo que "pulse" una vez por segundo
 static time_t inicioPulsaciones;
 static time_t finPulsaciones;
 
+enum estados_juego {menu, opciones, partida};
 
 
 

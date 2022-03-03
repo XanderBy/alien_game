@@ -1,4 +1,7 @@
-#include "..\Modelo\Partida.h"
+#include "..\..\Modelo\Estados\Partida.h"
+#include "../../Modelo/Jugador.h"
+#include "../../Modelo/Mapa.h"
+#include "../../Modelo/Enemigo.h"
 
 Partida::Partida(Mapa mapa, Jugador jugador, Enemigo enemigo)
 {

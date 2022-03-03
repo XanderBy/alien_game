@@ -1,7 +1,6 @@
-#include "Mapa.h"
-#include "Jugador.h"
-#include "Enemigo.h"
-
+#include "../Mapa.h"
+#include "../Jugador.h"
+#include "../Enemigo.h"
 
 #ifndef Partida_H
 #define Partida_H

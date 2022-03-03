@@ -57,15 +57,6 @@ bool Game::inicializacion()
 		//
 		al_init_image_addon();
 
-		//partida = new Partida;
-		//Inicializamos el mapa
-		Nave* enemigos = new Nave[max_naves_enemigos_gb];
-		Nave* aliados = new Nave[max_naves_jugador_gb];
-		Recuadro** cuadricula = new Recuadro * [ancho_mapa_gb];
-		for (int i = 0; i < ancho_mapa_gb; i++) cuadricula[i] = new Recuadro[alto_mapa_gb];
-		partida =new Partida();
-		partida->mapa = new Mapa(cuadricula, max_naves_jugador_gb, max_naves_enemigos_gb,ancho_mapa_gb,alto_mapa_gb);
-		partida->jugador = new Jugador(max_naves_jugador_gb);
 	}
 	catch (const std::exception&)
 	{
@@ -92,7 +83,7 @@ bool Game::bucle_principal()
 
 			//Con el evento timer asignamos que hace si presiona 
 			// X tecla en el array key
-			EventosTeclado(&event);
+			eventos_teclado(&event);
 
 
 			if (Cerrar_juego) {
@@ -100,7 +91,7 @@ bool Game::bucle_principal()
 			}
 
 			//Definimos el array key
-			Eventos(&event);
+			eventos(&event);
 
 
 			if (al_is_event_queue_empty(queue) && pintar)
@@ -108,8 +99,7 @@ bool Game::bucle_principal()
 				al_clear_to_color(al_map_rgb(0, 0, 0));
 				pintar = false;
 
-				//mapa.actualizar_posicion();
-				partida->mapa->dibujar_mapa();
+				eleccion_estado();
 
 				al_flip_display();
 			}
@@ -127,7 +117,27 @@ bool Game::bucle_principal()
 	return res;
 }
 
-void Game::EventosTeclado(ALLEGRO_EVENT* event)
+void Game::eleccion_estado()
+{
+
+	switch (this->estados.estado_actual)
+	{
+	case menu:
+		this->estados.estados();
+		break;
+	case opciones:
+		this->estados.estados();
+		break;
+	case partida:
+		this->estados.estados();
+		break;
+	default:
+		break;
+	}
+
+}
+
+void Game::eventos_teclado(ALLEGRO_EVENT* event)
 {
 	switch (event->type)
 	{
@@ -143,7 +153,7 @@ void Game::EventosTeclado(ALLEGRO_EVENT* event)
 	}
 }
 
-void Game::Eventos(ALLEGRO_EVENT* event)
+void Game::eventos(ALLEGRO_EVENT* event)
 {
 	switch (event->type)
 	{
@@ -157,16 +167,16 @@ void Game::Eventos(ALLEGRO_EVENT* event)
 		switch (event->keyboard.keycode) {
 		case ALLEGRO_KEY_W:
 			printf("Pulsó W");
-			this->mover_y(true); // remove upward velocity
+			//this->mover_y(true); // remove upward velocity
 			break;
 		case ALLEGRO_KEY_S:
-			this->mover_y(false); // remove downward velocity
+			//this->mover_y(false); // remove downward velocity
 			break;
 		case ALLEGRO_KEY_A:
-			this->mover_x(false); // remove leftward velocity
+			//this->mover_x(false); // remove leftward velocity
 			break;
 		case ALLEGRO_KEY_D:
-			this->mover_x(true); // remove leftward velocity
+			//this->mover_x(true); // remove leftward velocity
 			break;
 		}
 		break;
@@ -187,18 +197,8 @@ void Game::Eventos(ALLEGRO_EVENT* event)
 			break;
 		}
 		break;*/
+		break;
 	}
 }
 
-void Game::mover_x(bool positivo)
-{
-	partida->mapa->posicion_x = positivo ? partida->mapa->posicion_x - velocidad_movimiento :partida->mapa->posicion_x + velocidad_movimiento;
-	std::cout << " Posicion X MAPA: " << partida->mapa->posicion_x;
-}
-
-void Game::mover_y(bool positivo)
-{
-	partida->mapa->posicion_y = positivo ? partida->mapa->posicion_y + velocidad_movimiento : partida->mapa->posicion_y - velocidad_movimiento;
-	std::cout << " Posicion Y MAPA: " << partida->mapa->posicion_y;
-}
 
