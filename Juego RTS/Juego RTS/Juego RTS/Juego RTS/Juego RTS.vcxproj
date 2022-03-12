@@ -161,6 +161,7 @@
     <ClCompile Include="src\Funcion\Jugador.cpp" />
     <ClCompile Include="src\Funcion\Estados\Manejador_estados.cpp" />
     <ClCompile Include="src\Funcion\Estados\Partida.cpp" />
+    <ClCompile Include="src\Funcion\Visual\Boton.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Globales.cpp" />
     <ClCompile Include="src\Funcion\Hoja_sprite.cpp" />
@@ -197,6 +198,7 @@
     <ClInclude Include="src\Modelo\Estados\Partida.h" />
     <ClInclude Include="src\Modelo\Recuadro.h" />
     <ClInclude Include="src\Modelo\Sprite.h" />
+    <ClInclude Include="src\Modelo\Visual\Boton.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Juego RTS.rc" />

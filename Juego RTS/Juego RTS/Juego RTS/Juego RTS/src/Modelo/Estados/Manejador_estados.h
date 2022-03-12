@@ -13,12 +13,13 @@ private:
 
 public:
 
-	estados_juego estado_actual;
+	int estado_actual;
 	Menu estado_menu;
 	Opciones estado_opciones;
 	Partida estado_partida;
 
 	Manejador_estados();
+	Manejador_estados(int estado_actual);
 	~Manejador_estados();
 
 	void estados();

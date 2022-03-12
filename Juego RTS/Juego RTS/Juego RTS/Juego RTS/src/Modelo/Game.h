@@ -23,6 +23,19 @@ public:
 
 	//int velocidad_movimiento = 1;
 	Manejador_estados estados;
+	double FPS = 1 / 60;
+
+	ALLEGRO_TIMER* timer = NULL;
+	ALLEGRO_EVENT_QUEUE* queue = NULL;
+	ALLEGRO_DISPLAY* disp = NULL;
+
+	bool Cerrar_juego = false;
+	bool pintar = true;
+
+
+	//Con esto controlo que "pulse" una vez por segundo
+	time_t inicioPulsaciones;
+	time_t finPulsaciones;
 
 	Game();
 	~Game();

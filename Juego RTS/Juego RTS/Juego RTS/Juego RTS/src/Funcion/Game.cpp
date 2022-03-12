@@ -6,7 +6,7 @@
 
 Game::Game()
 {
-	
+	this->estados = Manejador_estados(1);
 }
 
 Game::~Game()
@@ -29,6 +29,8 @@ bool Game::inicializacion()
 
 		//Instalamos el modulo de teclado
 		al_install_keyboard();
+		//Instalamos el modulo del ratón
+		al_install_mouse();
 
 		//Instalamos el modulo del Timer el cual vaya a 60 FPS
 		timer = al_create_timer(FPS);
@@ -50,6 +52,7 @@ bool Game::inicializacion()
 
 		//registramos los modulos anteriormente instalados
 
+		al_register_event_source(queue, al_get_mouse_event_source());
 		al_register_event_source(queue, al_get_keyboard_event_source());
 		al_register_event_source(queue, al_get_display_event_source(disp));
 		al_register_event_source(queue, al_get_timer_event_source(timer));
@@ -72,7 +75,7 @@ bool Game::bucle_principal()
 
 	try
 	{
-
+		
 		//Se inicializa el timer
 		al_start_timer(timer);
 		while (true)
@@ -122,13 +125,13 @@ void Game::eleccion_estado()
 
 	switch (this->estados.estado_actual)
 	{
-	case menu:
+	case 1://menu
 		this->estados.estados();
 		break;
-	case opciones:
+	case 2://opciones
 		this->estados.estados();
 		break;
-	case partida:
+	case 3://partida
 		this->estados.estados();
 		break;
 	default:
